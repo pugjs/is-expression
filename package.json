@@ -10,6 +10,10 @@
     "acorn": "^2.6.2",
     "object-assign": "^4.0.1"
   },
+  "devDependencies": {
+    "istanbul": "*",
+    "testit": "^2.0.2"
+  },
   "scripts": {
     "test": "node test && npm run coverage",
     "coverage": "istanbul cover test"
