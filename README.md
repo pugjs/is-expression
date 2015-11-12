@@ -2,7 +2,7 @@
 
 Validates a string as a JavaScript expression
 
-<!-- [![Build Status](https://img.shields.io/travis/TimothyGu/is-expression/master.svg)](https://travis-ci.org/TimothyGu/is-expression) -->
+[![Build Status](https://img.shields.io/travis/TimothyGu/is-expression/master.svg)](https://travis-ci.org/TimothyGu/is-expression)
 [![Dependency Status](https://img.shields.io/david/TimothyGu/is-expression.svg)](https://david-dm.org/TimothyGu/is-expression)
 [![npm version](https://img.shields.io/npm/v/is-expression.svg)](https://www.npmjs.org/package/is-expression)
 
