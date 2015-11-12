@@ -3,7 +3,7 @@
 var fs = require('fs');
 var assert = require('assert');
 var testit = require('testit');
-var isExpression = require('../');
+var isExpression = require('./');
 
 testit('api', function () {
   testit('no options', function () {
