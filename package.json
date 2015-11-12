@@ -1,0 +1,23 @@
+{
+  "name": "is-expression",
+  "version": "0.0.0",
+  "description": "Check if a string is a valid JavaScript expression",
+  "keywords": [
+    "javascript",
+    "expression"
+  ],
+  "dependencies": {
+    "acorn": "^2.6.2",
+    "object-assign": "^4.0.1"
+  },
+  "scripts": {
+    "test": "node test && npm run coverage",
+    "coverage": "istanbul cover test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TimothyGu/is-expression.git"
+  },
+  "author": "Timothy Gu <timothygu99@gmail.com>",
+  "license": "MIT"
+}
