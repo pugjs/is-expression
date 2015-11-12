@@ -5,27 +5,6 @@ var assert = require('assert');
 var testit = require('testit');
 var isExpression = require('./');
 
-testit('api', function () {
-  testit('no options', function () {
-    assert(isExpression('myVar'))
-    assert(!isExpression('var'))
-    assert(isExpression('["an", "array", "\'s"].indexOf("index")'))
-  })
-
-  testit('throw === true', function () {
-    var options = {throw: true}
-    assert.throws(function () {
-      isExpression('var', options)
-    })
-  })
-
-  testit('strict === true', function () {
-    var options = {strict: true}
-    assert(isExpression('public'))
-    assert(!isExpression('public', options))
-  })
-})
-
 function passes (src, options) {
   testit(JSON.stringify(src, options), function () {
     options = options || {}
