@@ -1,9 +1,8 @@
-'use strict';
+'use strict'
 
-var fs = require('fs');
-var assert = require('assert');
-var testit = require('testit');
-var isExpression = require('./');
+var assert = require('assert')
+var testit = require('testit')
+var isExpression = require('./')
 
 function passes (src, options) {
   testit(JSON.stringify(src, options), function () {
