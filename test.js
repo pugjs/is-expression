@@ -17,6 +17,7 @@ testit('passes', function () {
   passes('\npublic');
   passes('abc // my comment', {lineComment: true});
   passes('() => a');
+  passes('function (a = "default") {"use strict";}');
 });
 
 function error(src, line, col, options) {
@@ -43,4 +44,5 @@ testit('fails', function () {
   error('\npublic', 2, 0, {strict: true});
   error('abc // my comment', 1, 4);
   error('() => a', 1, 1, {ecmaVersion: 5});
+  error('function (a = "default") {"use strict";}', 1, 26, {ecmaVersion: 7});
 });
