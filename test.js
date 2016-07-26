@@ -16,7 +16,7 @@ testit('passes', function () {
   passes('["an", "array", "\'s"].indexOf("index")');
   passes('\npublic');
   passes('abc // my comment', {lineComment: true});
-  passes('() => a', {ecmaVersion: 6});
+  passes('() => a');
 });
 
 function error(src, line, col, options) {
