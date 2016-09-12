@@ -7,7 +7,7 @@
     "expression"
   ],
   "dependencies": {
-    "acorn": "~4.0.1",
+    "acorn": "~4.0.2",
     "object-assign": "^4.0.1"
   },
   "devDependencies": {
