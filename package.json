@@ -7,12 +7,12 @@
     "expression"
   ],
   "dependencies": {
-    "acorn": "~4.0.2",
-    "object-assign": "^4.0.1"
+    "acorn": "~7.1.1",
+    "object-assign": "^4.1.1"
   },
   "devDependencies": {
     "istanbul": "*",
-    "testit": "^2.0.2"
+    "testit": "^3.1.0"
   },
   "scripts": {
     "test": "node test && npm run coverage",
