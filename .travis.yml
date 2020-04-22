@@ -4,6 +4,7 @@ sudo: false
 node_js:
   - '4'
   - '5'
+  - lts/*
 
 after_success:
   - npm run coverage
