@@ -7,16 +7,16 @@
     "expression"
   ],
   "dependencies": {
-    "acorn": "~4.0.2",
-    "object-assign": "^4.0.1"
+    "acorn": "^7.1.1",
+    "object-assign": "^4.1.1"
   },
   "devDependencies": {
-    "istanbul": "*",
-    "testit": "^2.0.2"
+    "nyc": "^15.0.1",
+    "testit": "^3.1.0"
   },
   "scripts": {
     "test": "node test && npm run coverage",
-    "coverage": "istanbul cover test.js"
+    "coverage": "nyc node test.js"
   },
   "repository": {
     "type": "git",
