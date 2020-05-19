@@ -1,6 +1,9 @@
 {
   "name": "is-expression",
   "version": "2.1.0",
+  "files": [
+    "index.js"
+  ],
   "description": "Check if a string is a valid JavaScript expression",
   "keywords": [
     "javascript",
