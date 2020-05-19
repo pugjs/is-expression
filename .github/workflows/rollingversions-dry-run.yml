@@ -12,7 +12,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
-          registry-url: 'https://registry.npmjs.org'
       - run: yarn install --frozen-lockfile
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - run: npx rollingversions publish --github-token ${{ secrets.GITHUB_TOKEN }} --dry-run
