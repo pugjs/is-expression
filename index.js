@@ -8,7 +8,8 @@ module.exports = isExpression;
 var DEFAULT_OPTIONS = {
   throw: false,
   strict: false,
-  lineComment: false
+  lineComment: false,
+  ecmaVersion: 2020,
 };
 
 function isExpression(src, options) {
