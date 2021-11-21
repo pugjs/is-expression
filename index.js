@@ -1,21 +1,17 @@
 'use strict';
 
-var acorn = require('acorn');
-var objectAssign = require('object-assign');
-
-module.exports = isExpression;
-
-var DEFAULT_OPTIONS = {
-  throw: false,
-  strict: false,
-  lineComment: false
-};
+const acorn = require('acorn');
 
 function isExpression(src, options) {
-  options = objectAssign({}, DEFAULT_OPTIONS, options);
+  options = {
+    throw: false,
+    strict: false,
+    lineComment: false,
+    ...options
+  };
 
   try {
-    var parser = new acorn.Parser(options, src, 0);
+    const parser = new acorn.Parser(options, src, 0);
 
     if (options.strict) {
       parser.strict = true;
@@ -34,12 +30,14 @@ function isExpression(src, options) {
       parser.unexpected();
     }
   } catch (ex) {
-    if (!options.throw) {
-      return false;
+    if (options.throw) {
+      throw ex;
     }
 
-    throw ex;
+    return false;
   }
 
   return true;
 }
+
+module.exports = isExpression;

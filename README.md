@@ -37,7 +37,7 @@ See the examples below for usage.
 ## Examples
 
 ```js
-var isExpression = require('is-expression')
+import isExpression from 'is-expression'
 
 isExpression('myVar')
 //=> true
