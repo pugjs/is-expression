@@ -1,8 +1,8 @@
 'use strict';
 
-var assert = require('assert');
-var testit = require('testit');
-var isExpression = require('./');
+const assert = require('assert');
+const testit = require('testit');
+const isExpression = require('./index.js');
 
 function passes(src, options) {
   testit(JSON.stringify(src, options), function () {

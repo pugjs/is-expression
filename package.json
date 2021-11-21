@@ -10,8 +10,7 @@
     "expression"
   ],
   "dependencies": {
-    "acorn": "^7.1.1",
-    "object-assign": "^4.1.1"
+    "acorn": "^7.1.1"
   },
   "devDependencies": {
     "nyc": "^15.0.1",
