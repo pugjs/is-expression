@@ -18,6 +18,7 @@ testit('passes', function () {
   passes('abc // my comment', {lineComment: true});
   passes('() => a');
   passes('function (a = "default") {"use strict";}', {ecmaVersion: 6});
+  passes('5 ?? 6');
 });
 
 function error(src, line, col, options) {
